@@ -1,0 +1,21 @@
+PREGUNTAS DEL LABORATORIO - ANIMACIONES CSS
+
+Pregunta 1:
+Al mantener presionado el clic sobre una card, se dispara una animación o cambio visual momentáneo mientras dura la pulsación. Esto suele provocarse mediante la pseudoclase :active (que aplica estilos mientras el elemento está siendo activado/presionado por el usuario) combinada con animation o transition.
+
+Pregunta 2:
+Al recargar la página, las cards ejecutan la animación slit-in-diagonal-2 automáticamente al cargarse el documento (durante 450ms con curva linear y fill-mode both), en lugar de esperar a que el usuario interactúe con ellas.
+
+Pregunta 3:
+Selectores probados en .card:
+1) :focus -> Se activa cuando la card recibe el enfoque (por ejemplo, al navegar con teclado o hacer clic si es enfocable); la animación corre al enfocarlo.
+2) :first-child -> Aplica la regla solo a la primera tarjeta dentro de su contenedor padre, animando únicamente esa card en el estado indicado.
+3) :nth-child(2) -> Aplica el estilo solo a la segunda tarjeta del contenedor, permitiendo animaciones selectivas por posición.
+
+Pregunta 4:
+Un @keyframes define las etapas o puntos clave de una animación a lo largo del tiempo (por ejemplo, del 0% al 100%, o from y to). Le indica al navegador qué propiedades CSS deben cambiar y en qué momento de la secuencia para lograr un movimiento o transición gradual.
+
+Pregunta 5:
+- animation-duration: Define cuánto tiempo tarda en completarse un ciclo de la animación (por ejemplo, 450ms o 5s).
+- animation-timing-function: Controla la curva de aceleración y desaceleración de la animación a lo largo de su duración (por ejemplo, linear, ease o ease-out).
+- transform: Permite modificar visualmente un elemento trasladándolo, escalándolo, rotándolo o sesgándolo sin alterar el flujo normal del diseño tanto como otras propiedades.

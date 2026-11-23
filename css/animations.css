@@ -48,3 +48,46 @@
     -webkit-animation: slit-in-diagonal-2 450ms linear both;
     animation: slit-in-diagonal-2 450ms linear both;
 }
+
+.card-img-top {
+  overflow: hidden;
+}
+
+.card-img-top:hover {
+  -webkit-animation: kenburns-top 5s ease-out both;
+  animation: kenburns-top 5s ease-out both;
+}
+
+
+/* Animación en elemento del navbar (ejemplo al pasar el cursor) */
+.navbar-brand:hover,
+.nav-link:hover {
+  animation: pulso-suave 600ms ease-in-out;
+}
+
+@keyframes pulso-suave {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Botones de las tarjetas: :hover y :active */
+.card .btn:hover {
+  animation: elevar-btn 250ms ease-out forwards;
+}
+
+.card .btn:active {
+  transform: scale(0.96);
+}
+
+@keyframes elevar-btn {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-2px) scale(1.03);
+  }
+}
